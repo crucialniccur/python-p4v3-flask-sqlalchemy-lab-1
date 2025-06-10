@@ -11,3 +11,8 @@ db = SQLAlchemy(metadata=metadata)
 
 class Earthquake(db.Model, SerializerMixin):
     __tablename__ = 'earthquakes'
+
+    id = Column()
+    magnitude = Column()
+    location = Column()
+    year = Column()
