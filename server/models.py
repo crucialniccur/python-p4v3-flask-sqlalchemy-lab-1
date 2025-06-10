@@ -10,4 +10,4 @@ db = SQLAlchemy(metadata=metadata)
 
 
 class Earthquake(db.Model, SerializerMixin):
-    pass
+    __tablename__ = 'earthquakes'
